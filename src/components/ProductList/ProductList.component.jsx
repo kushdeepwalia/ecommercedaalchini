@@ -28,6 +28,12 @@ const ProductListComp = ({ data, totalCost, setTotalCost }) => {
             setAddButton(false);
             setQuantity(cart[index].quantity);
          }
+         else {
+            setAddButton(true);
+         }
+      }
+      else {
+         setAddButton(true);
       }
    }, [cart, data])
 
