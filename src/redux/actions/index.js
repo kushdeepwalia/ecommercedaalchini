@@ -56,6 +56,12 @@ const userDet = (details) => {
    }
 }
 
+const orderPlaced = () => {
+   return {
+      type: ActionTypes.ORDER_PLACED
+   }
+}
+
 const Actions = {
    productLoaded,
    userDet,
@@ -64,7 +70,8 @@ const Actions = {
    itemAdded,
    itemQuanInc,
    itemQuanDec,
-   cartLoaded
+   cartLoaded,
+   orderPlaced
 }
 
 export default Actions

@@ -41,7 +41,6 @@ const ProductListComp = ({ data, totalCost, setTotalCost }) => {
       else {
          cost = data.discountedAmount * quantity;
       }
-      console.log(data._id, "ITEM_ADDED", quantity, "Cost:", cost)
       setTotalCost(cost)
       setAddButton(false)
    }
@@ -53,7 +52,6 @@ const ProductListComp = ({ data, totalCost, setTotalCost }) => {
          })
          dispatch(Actions.cartLoaded(changedCart))
          let cost = calcTotalCost(changedCart) === undefined ? 0 : calcTotalCost(changedCart)
-         console.log(data._id, "QUAN_DEC", 0, "Cost:", cost)
          setTotalCost(cost)
          setAddButton(true)
       }
@@ -64,7 +62,6 @@ const ProductListComp = ({ data, totalCost, setTotalCost }) => {
          remNotWant[0].quantity -= 1
          dispatch(Actions.itemQuanDec(...remNotWant))
          let cost = calcTotalCost(cart)
-         console.log(data._id, "QUAN_DEC", quantity - 1, "Cost:", cost)
          setTotalCost(cost)
          setQuantity(quantity - 1)
       }
@@ -84,7 +81,6 @@ const ProductListComp = ({ data, totalCost, setTotalCost }) => {
          remNotWant[0].quantity += 1
          dispatch(Actions.itemQuanInc(...remNotWant))
          let cost = calcTotalCost(cart)
-         console.log(data._id, "QUAN_INC", quantity + 1, "Cost:", cost)
          setTotalCost(cost)
          setQuantity(quantity + 1)
       }

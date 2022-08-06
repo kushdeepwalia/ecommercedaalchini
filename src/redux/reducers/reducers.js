@@ -19,6 +19,8 @@ export const cart = (state = [], { type, payload }) => {
          return [...state, payload];
       case ActionTypes.ITEM_QUANTITY_DECREASED:
          return [...state, payload];
+      case ActionTypes.ORDER_PLACED:
+         return [];
       default:
          return state;
    }

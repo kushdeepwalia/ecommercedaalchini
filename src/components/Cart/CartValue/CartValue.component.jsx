@@ -31,7 +31,7 @@ const CartValue = ({ item, setTempCart, setTotalCost }) => {
    }, [cart, item])
 
    const decQuantity = () => {
-      console.log(item._id, quantity);
+      
       if (quantity === 1) {
          let changedCart = cart.filter((obj) => {
             return obj._id !== item._id

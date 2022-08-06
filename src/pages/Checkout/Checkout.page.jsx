@@ -85,7 +85,7 @@ const CheckoutPage = () => {
             </Table>
          </CartDetails>
          <FooterContainer>
-            <Button>
+            <Button onClick={() => navigate("/orderconfirm")}>
                <ButtonText>Pay & Order</ButtonText>
                <ButtonArrow><FontAwesomeIcon icon={faArrowRight} /></ButtonArrow>
             </Button>

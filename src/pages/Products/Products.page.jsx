@@ -51,7 +51,12 @@ const ProductsPage = () => {
 
    const handleButtonClick = (text) => {
       if (text === "checkout") {
-         navigate("/checkout")
+         if (cart.length !== 0)
+            navigate("/checkout")
+         else
+            toast("Please add items to cart", {
+               autoClose: 3000
+            })
       }
       else if (text === "login") {
          if (showComponent === true) {
