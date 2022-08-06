@@ -80,7 +80,7 @@ export const QuantityButtonContainer = styled.div`
 `
 
 export const AddButton = styled.div`
-   background-color: green;
+   background-color: var(--green);
    width: 65px;
    height: 25px;
    display: flex;
@@ -95,7 +95,7 @@ export const QuantityButton = styled.div`
    width: 65px;
    height: 25px;
    background-color: white;
-   border: 1px solid green;
+   border: 1px solid var(--green);
    display: flex;
    justify-content: space-evenly;
    align-items: center;
@@ -107,7 +107,7 @@ export const Btn = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-   color: green;
+   color: var(--green);
    &:not(:nth-child(2)){
       cursor: pointer;
       font-weight: bolder;

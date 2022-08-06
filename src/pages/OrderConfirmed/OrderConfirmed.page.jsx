@@ -34,7 +34,7 @@ const OrderConfirm = () => {
       <Container>
          <SubContainer>
             <IconContainer>
-               <FontAwesomeIcon icon={faCircleCheck} size="7x" color='green' />
+               <FontAwesomeIcon icon={faCircleCheck} size="7x" color='var(--green)' />
             </IconContainer>
             <ButtonContainer>
                <LogoutButton onClick={handleLogout}>Logout</LogoutButton>

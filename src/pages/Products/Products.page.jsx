@@ -54,7 +54,7 @@ const ProductsPage = () => {
          if (cart.length !== 0)
             navigate("/checkout")
          else
-            toast("Please add items to cart", {
+            toast.warning("Please add items to cart", {
                autoClose: 3000
             })
       }

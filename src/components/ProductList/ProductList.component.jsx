@@ -69,8 +69,7 @@ const ProductListComp = ({ data, totalCost, setTotalCost }) => {
 
    const incQuantity = () => {
       if (quantity === 10) {
-         toast("You have reached the max limit!!", {
-            icon: "warning",
+         toast.warning("You have reached the max limit!!", {
             autoClose: 3000
          })
       }

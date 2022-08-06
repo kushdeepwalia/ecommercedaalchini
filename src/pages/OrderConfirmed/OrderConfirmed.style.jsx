@@ -38,10 +38,10 @@ export const ButtonContainer = styled.div`
 `
 
 export const LogoutButton = styled.div`
-   background-color: red;
+   border: 1px solid var(--green);
+   color: var(--green);
    padding: 0 10px;
    height: 50%;
-   color: white;
    font-weight: bold;
    font-size: 17px;
    
@@ -53,5 +53,6 @@ export const LogoutButton = styled.div`
 
 export const ContinueButton = styled(LogoutButton)`
    margin-left: 15px;
-   background-color: blue;
+   background-color: var(--green);
+   color: white;
 `

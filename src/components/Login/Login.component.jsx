@@ -26,15 +26,21 @@ const Login = ({ toast, closeCart }) => {
          otp = "0000";
       }
       setOtp(otp);
-      toast("Your otp is: " + otp);
+      toast.info("Your otp is: " + otp, {
+         autoClose: 3000
+      });
    }
 
    const handleSubmit = () => {
       if (otp === "0000" || conOtp === "") {
-         toast("Login failed!");
+         toast.error("Login failed!", {
+            autoClose: 3000
+         })
       }
       else if (conOtp === otp) {
-         toast("Login successfully!");
+         toast.success("Login successfully!", {
+            autoClose: 3000
+         });
          dispatch(Actions.loggedin())
          closeCart();
       }

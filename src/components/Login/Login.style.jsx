@@ -27,7 +27,7 @@ export const Verify = styled.div`
    align-items: center;
    justify-content: center;
    width: 30%;
-   background-color: green;
+   background-color: var(--green);
    color: white;
    height: 35px;
 `
