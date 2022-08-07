@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const SubContainer = styled.div`
    width: 400px;
    height: 300px;
-   
+   border-radius: 10px;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
@@ -35,6 +35,12 @@ export const ButtonContainer = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+`
+
+export const OrderConfirmHeading = styled.div`
+   font-size: 25px;
+   margin: 0;
+   font-weight: bold;
 `
 
 export const LogoutButton = styled.div`

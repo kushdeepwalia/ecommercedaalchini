@@ -20,9 +20,12 @@ export const PickupDetails = styled.div`
 `
 
 export const PickupHeading = styled.div`
-   color: lightgrey;
+   color: #686868;
    width: 100%;
+   font-size: 17px;
+   font-weight: bold;
    border-bottom: 1px solid lightgrey;
+   margin-bottom: 10px;
 `
 
 export const PickupDesc = styled.div`
@@ -50,7 +53,7 @@ export const CartDetails = styled(PickupDetails)`
 `
 
 export const CartHeading = styled(PickupHeading)`
-   
+   margin-bottom: 0;
 `
 
 export const Button = styled(ButtonContainer)`

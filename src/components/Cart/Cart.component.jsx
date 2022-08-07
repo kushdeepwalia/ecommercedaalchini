@@ -1,7 +1,7 @@
 import { faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
-import { Cross, Head, Heading, Table, TableData, TableRow, FirstRow, RestRow, LastRow } from './Cart.style'
+import { Cross, Container, Head, Heading, Table, TableData, TableRow, FirstRow, RestRow, LastRow } from './Cart.style'
 import CartValue from './CartValue/CartValue.component';
 import { useSelector } from 'react-redux';
 
@@ -25,7 +25,7 @@ const Cart = ({ closeCart, totalCost, setTotalCost }) => {
    }, [tempCart])
 
    return (
-      <>
+      <Container>
          <Head>
             <Heading>Cart Details</Heading>
             <Cross onClick={closeCart}><FontAwesomeIcon icon={faClose} size="xl" /></Cross>
@@ -54,7 +54,7 @@ const Cart = ({ closeCart, totalCost, setTotalCost }) => {
                </TableRow>
             </LastRow>
          </Table>
-      </>
+      </Container>
    )
 }
 

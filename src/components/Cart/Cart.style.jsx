@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 20px;
+`
+
 export const Head = styled.div`
    width: 100%;
    height: 30px;
@@ -16,6 +25,7 @@ export const Heading = styled.div`
 
 export const Cross = styled.div`
    cursor: pointer;
+   margin: 0 15px;
 `
 
 export const Table = styled.div`
@@ -23,7 +33,7 @@ export const Table = styled.div`
    flex-direction: column;
    align-items: center;
    height: 100%;
-   width: 100%;
+   width: 95%;
 `
 
 export const FirstRow = styled.div`
@@ -35,7 +45,7 @@ export const FirstRow = styled.div`
 
 export const RestRow = styled.div`
    width: 95%;
-   height: ${props => props.height ? props.height : "250px"};
+   height: ${props => props.height ? props.height : "230px"};
    display: flex;
    flex-direction: column;
    overflow-y: auto;
@@ -52,7 +62,8 @@ export const TableRow = styled.div`
    justify-content: space-between;
 
    ${FirstRow} &{
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
    }
    
    ${RestRow} &{

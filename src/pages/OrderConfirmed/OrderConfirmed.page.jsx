@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router'
 import Actions from '../../redux/actions'
-import { ButtonContainer, Container, ContinueButton, IconContainer, LogoutButton, SubContainer } from './OrderConfirmed.style'
+import { ButtonContainer, Container, ContinueButton, IconContainer, LogoutButton, OrderConfirmHeading, SubContainer } from './OrderConfirmed.style'
 
 const OrderConfirm = () => {
    const dispatch = useDispatch();
@@ -36,6 +36,7 @@ const OrderConfirm = () => {
             <IconContainer>
                <FontAwesomeIcon icon={faCircleCheck} size="7x" color='var(--green)' />
             </IconContainer>
+            <OrderConfirmHeading>Order Confirmed</OrderConfirmHeading>
             <ButtonContainer>
                <LogoutButton onClick={handleLogout}>Logout</LogoutButton>
                <ContinueButton onClick={handleContinue}>Continue Shopping</ContinueButton>
